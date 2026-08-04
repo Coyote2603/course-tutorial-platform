@@ -1,0 +1,147 @@
+# Getting started
+
+This guide takes an instructor from a fresh copy of the repository to a locally running, rebranded course site. No web-development framework is required.
+
+## 1. Make a clean copy
+
+Use GitHub's template or import workflow if the published repository is configured as a template. Otherwise clone it normally:
+
+```bash
+git clone YOUR_REPOSITORY_URL
+cd course-tutorial-platform
+```
+
+If you are a maintainer creating the public repository from a private teaching platform, do **not** fork the private repository or copy its `.git` directory. Begin with the sanitized public files in a new repository so private materials do not survive in commit history.
+
+## 2. Start the site
+
+The platform has no build step. Either command below starts the same local server:
+
+```bash
+npm run serve
+```
+
+or:
+
+```bash
+python3 -m http.server 8000
+```
+
+Visit `http://localhost:8000`.
+
+## 3. Explore the demo before editing
+
+The five synthetic sessions are intentionally organized as a teaching-design tour:
+
+1. **Concepts and Vocabulary** shows concept cards, a simple diagram, a practice problem, and presenter hints.
+2. **Worked Example** demonstrates a transparent calculation and sensitivity discussion.
+3. **Decision Lab** models practice before feedback and progressive scaffolding.
+4. **Applied Case** shows how to combine analysis, stakeholders, and implementation.
+5. **Review Workshop** demonstrates retrieval, synthesis, and transfer.
+
+For each session:
+
+- read the summary and learning objectives;
+- open the concepts and diagram sections;
+- answer a problem before revealing its solution;
+- open the interactive slides;
+- use the keyboard arrows to navigate; and
+- reveal any optional hint or discussion prompt.
+
+Then open the Newsvendor Challenge from the dashboard. The game is a complete public activity and can remain in your adaptation even if you replace every demo session.
+
+## 4. Set the course identity
+
+Open `js/site-config.js`. Change only the values, keeping the property names and surrounding JavaScript syntax intact.
+
+```js
+const SITE_CONFIG = Object.freeze({
+  siteTitle: "Methods Studio",
+  shortTitle: "Methods Studio",
+  courseTitle: "Evidence for Better Decisions",
+  courseSubtitle: "Five guided labs for translating evidence into action.",
+  instructorName: "Dr. Example",
+  institutionName: "Example University",
+  footerText: "Methods Studio · Example University",
+
+  theme: Object.freeze({
+    primary: "#173f5f",
+    accent: "#e05a47",
+    accentText: "#b43e30"
+  }),
+
+  features: Object.freeze({
+    showGame: true
+  }),
+
+  game: Object.freeze({
+    title: "The Newsvendor Challenge",
+    description: "Make inventory decisions under uncertainty and learn from immediate feedback.",
+    href: "newsvendor-game.html",
+    duration: "About 6 minutes"
+  })
+});
+```
+
+Set `institutionName` to an empty string if you do not want an institution displayed. Set `features.showGame` to `false` if the game is not relevant to your course. See [Adapting the platform](ADAPTING_THE_PLATFORM.md) for every setting.
+
+Use only logos, names, photographs, and brand colors you are authorized to publish. This template deliberately includes no institutional logo.
+
+## 5. Replace the sessions
+
+Open `js/content.js`. Each object in `SESSIONS` defines one session. A practical workflow is:
+
+1. duplicate one synthetic session object;
+2. give it a unique `number`, `slug`, and `title`;
+3. replace its summary and objectives;
+4. edit one content section at a time;
+5. load that session in the browser after each change; and
+6. remove the original synthetic session only after the replacement works.
+
+The data shape is documented in [Content model](CONTENT_MODEL.md). You may add or remove sessions. Keep session numbers unique and contiguous from 1 through the number of sessions, and preserve the field names consumed by the renderer.
+
+## 6. Decide which resources are public
+
+Every resource URL in `js/content.js` is visible to visitors. Choose one of two patterns:
+
+- **Public resource.** Add a small file that you created or are licensed to redistribute, then use a relative URL such as `assets/examples/my-handout.html`.
+- **Restricted resource.** Keep the file in an authenticated LMS or protected server and use its external HTTPS link. Do not copy the file into this repository.
+
+Test restricted links while signed out. The destination, not this static site, must enforce authentication.
+
+## 7. Check the adaptation
+
+Run all automated checks:
+
+```bash
+npm run check
+```
+
+This runs the public-boundary scan, validates the site configuration and session data, and tests the Newsvendor calculations. To run only the game tests:
+
+```bash
+npm test
+```
+
+Also perform a browser review:
+
+- open the dashboard and every session;
+- reveal every answer and hint;
+- enter presenter mode for every session;
+- test the Newsvendor game through all eight rounds;
+- navigate without a mouse;
+- inspect a phone-width layout; and
+- confirm there are no errors in the browser console.
+
+Automated checks cannot determine whether you own a document or whether a fictional example resembles a confidential case. Complete the human review in [Release checklist](RELEASE_CHECKLIST.md).
+
+## 8. Publish
+
+The repository can be served by GitHub Pages or any ordinary static host. See [Deployment](DEPLOYMENT.md) for clean-repository setup, host settings, and post-deployment checks.
+
+## Where to go next
+
+- Use [Teaching design guide](TEACHING_DESIGN_GUIDE.md) to plan the learning sequence before writing many slides.
+- Use [Content model](CONTENT_MODEL.md) while editing `js/content.js`.
+- Use [Newsvendor game](NEWSVENDOR_GAME.md) before changing scenario economics or feedback.
+- Use [Privacy and access](PRIVACY_AND_ACCESS.md) before linking course resources.

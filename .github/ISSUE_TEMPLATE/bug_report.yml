@@ -1,0 +1,58 @@
+name: Bug report
+description: Report a reproducible problem in the public platform or demo.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a problem. Do not include credentials, student data, restricted materials, or confidential vulnerability details. Use the repository Security tab for those reports.
+  - type: input
+    id: page
+    attributes:
+      label: Affected page or component
+      description: Name the dashboard, session, presenter, game, validation script, or documentation page.
+      placeholder: "Presenter mode for Session 3"
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: What happened?
+      description: Describe the visible behavior and any non-sensitive error message.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      placeholder: |
+        1. Start the site with npm run serve
+        2. Open ...
+        3. Select ...
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and operating system
+      placeholder: "Firefox 128 on macOS"
+  - type: textarea
+    id: testing
+    attributes:
+      label: Checks already performed
+      description: Include npm run check results and any browser-console observations that contain no sensitive data.
+  - type: checkboxes
+    id: public-safe
+    attributes:
+      label: Public-content confirmation
+      options:
+        - label: I have not included private course material, personal data, credentials, or confidential security details.
+          required: true

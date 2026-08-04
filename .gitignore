@@ -1,0 +1,64 @@
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local tooling output
+node_modules/
+coverage/
+.cache/
+.playwright-cli/
+output/playwright/
+_site/
+*.log
+
+# Secrets and local overrides
+.env
+.env.*
+!.env.example
+.htpasswd
+*.key
+*.pem
+*.p12
+*.pfx
+js/site-config.local.js
+js/content.local.js
+
+# Private or restricted teaching areas
+private/
+restricted/
+course-materials/
+course_materials/
+instructor-only/
+instructor_only/
+student-data/
+student_data/
+exports/
+backups/
+assets/course/
+assets/recordings/
+assets/instructor/
+
+# High-risk teaching and archive formats are excluded by default.
+# Deliberately remove a pattern only after rights, privacy, and release review.
+*.pdf
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.xls
+*.xlsx
+*.mp4
+*.mov
+*.m4v
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+*.sqlite
+*.db
+*.bak

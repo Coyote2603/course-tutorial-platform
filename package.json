@@ -1,0 +1,12 @@
+{
+  "name": "course-tutorial-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A reusable static platform for interactive course tutorials and teaching simulations.",
+  "license": "MIT",
+  "scripts": {
+    "check": "node scripts/check-public-boundary.mjs && node scripts/validate-content.mjs && node scripts/test-game.mjs",
+    "test": "node scripts/test-game.mjs",
+    "serve": "python3 -m http.server 8000"
+  }
+}
