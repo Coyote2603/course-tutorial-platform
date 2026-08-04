@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for helping make the Course Tutorial Platform more useful across courses and institutions. Contributions should preserve its low-maintenance, public-safe design.
+Thank you for helping make the Interactive Teaching Platform more useful across courses and institutions. Contributions should preserve its low-maintenance, public-safe design.
 
 ## Before you begin
 

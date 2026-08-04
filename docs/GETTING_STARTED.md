@@ -35,7 +35,7 @@ Visit `http://localhost:8000`.
 
 ## 3. Explore the demo before editing
 
-The five synthetic sessions are intentionally organized as a teaching-design tour:
+The five synthetic sessions provide a tour of the platform's features:
 
 1. **Concepts and Vocabulary** shows concept cards, a simple diagram, a practice problem, and presenter hints.
 2. **Worked Example** demonstrates a transparent calculation and sensitivity discussion.
@@ -60,13 +60,13 @@ Open `js/site-config.js`. Change only the values, keeping the property names and
 
 ```js
 const SITE_CONFIG = Object.freeze({
-  siteTitle: "Methods Studio",
-  shortTitle: "Methods Studio",
-  courseTitle: "Evidence for Better Decisions",
-  courseSubtitle: "Five guided labs for translating evidence into action.",
-  instructorName: "Dr. Example",
-  institutionName: "Example University",
-  footerText: "Methods Studio · Example University",
+  siteTitle: "Your Course Site",
+  shortTitle: "Your Course",
+  courseTitle: "Your Course Title",
+  courseSubtitle: "A short public description of the course materials.",
+  instructorName: "Your Name",
+  institutionName: "Your Institution",
+  footerText: "Your Course Site · Your Institution",
 
   theme: Object.freeze({
     primary: "#173f5f",
@@ -145,7 +145,7 @@ The repository can be served by GitHub Pages or any ordinary static host. See [D
 
 ## Where to go next
 
-- Use [Teaching design guide](TEACHING_DESIGN_GUIDE.md) to plan the learning sequence before writing many slides.
+- See the optional [notes on the sample sessions](TEACHING_DESIGN_GUIDE.md) for the rationale behind the demonstration.
 - Use [Content model](CONTENT_MODEL.md) while editing `js/content.js`.
 - Use [Newsvendor game](NEWSVENDOR_GAME.md) before changing scenario economics or feedback.
 - Use [Privacy and access](PRIVACY_AND_ACCESS.md) before linking course resources.

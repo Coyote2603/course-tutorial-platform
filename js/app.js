@@ -1,13 +1,13 @@
-/* Course Tutorial Platform — shared page rendering and interaction logic. */
+/* Interactive Teaching Platform — shared page rendering and interaction logic. */
 
 const DEFAULT_SITE_CONFIG = Object.freeze({
-  siteTitle: "Course Tutorial Platform",
-  shortTitle: "Course Tutorials",
+  siteTitle: "Interactive Teaching Platform",
+  shortTitle: "Teaching Platform",
   courseTitle: "Course Title",
-  courseSubtitle: "Guided tutorial sessions and practice activities.",
+  courseSubtitle: "Guided sessions and practice activities.",
   instructorName: "",
   institutionName: "",
-  footerText: "Course Tutorial Platform",
+  footerText: "Interactive Teaching Platform",
   theme: Object.freeze({ primary: "#173f5f", accent: "#e05a47", accentText: "#b43e30" }),
   features: Object.freeze({ showGame: true }),
   game: Object.freeze({
@@ -134,7 +134,7 @@ function renderDashboard() {
   const heading = document.getElementById("session-list-title");
   if (heading) {
     heading.textContent = sessions.length > 0
-      ? `${sessions.length} ${sessions.length === 1 ? "session" : "sessions"}, one coherent arc`
+      ? `${sessions.length} example ${sessions.length === 1 ? "session" : "sessions"}`
       : "Build your first guided session";
   }
 
@@ -148,7 +148,7 @@ function renderDashboard() {
       <span class="session-card-kicker">${escapeHTML(session.kicker || "Guided session")}</span>
       <h3>${escapeHTML(session.title)}</h3>
       <p>${escapeHTML(session.summary)}</p>
-      <div class="session-card-footer"><span>Start with</span><strong>${escapeHTML(objective)}</strong></div>
+      <div class="session-card-footer"><span>Example objective</span><strong>${escapeHTML(objective)}</strong></div>
     </a>`;
   });
 
@@ -179,7 +179,7 @@ function renderDashboard() {
 function renderConcepts(session) {
   if (!session.concepts?.length) return "";
   return `<section class="content-section" id="concepts" aria-labelledby="concepts-title">
-    <div class="content-heading"><span class="eyebrow">Foundation</span><h2 id="concepts-title">Key concepts</h2><p>Use these short cards as a shared reference before moving into application.</p></div>
+    <div class="content-heading"><span class="eyebrow">Foundation</span><h2 id="concepts-title">Key concepts</h2><p>These short cards provide a shared reference for the session.</p></div>
     <div class="concept-grid">${session.concepts.map(concept => `<article class="concept-card">
       <span class="concept-marker" aria-hidden="true">${escapeHTML(concept.marker || "•")}</span>
       <h3>${escapeHTML(concept.title)}</h3>
@@ -250,7 +250,7 @@ function renderProblems(session) {
   }).join("");
 
   return `<section class="content-section" id="problems" aria-labelledby="problems-title">
-    <div class="content-heading"><span class="eyebrow">Active practice</span><h2 id="problems-title">Multipart problems</h2><p>Make an attempt before opening each worked response. Reveal one part at a time.</p></div>
+    <div class="content-heading"><span class="eyebrow">Active practice</span><h2 id="problems-title">Multipart problems</h2><p>Worked responses can be revealed one part at a time after an attempt.</p></div>
     <div class="problem-list">${problems}</div>
   </section>`;
 }
@@ -313,7 +313,7 @@ function renderSession() {
         <span>On this page</span>
         ${outline.map(([id, label]) => `<a href="#${id}">${label}</a>`).join("")}
       </nav>
-      <div class="session-tip"><span aria-hidden="true">i</span><p><strong>Suggested flow</strong> Review the model, try the problems, then use the slides to discuss or teach the session.</p></div>
+      <div class="session-tip"><span aria-hidden="true">i</span><p><strong>Ways to use this session</strong> The model, problems, and slides can support self-study, discussion, or teaching.</p></div>
     </aside>
     <div class="session-main">
       ${renderConcepts(session)}

@@ -21,7 +21,7 @@ Each session uses the following fields.
 | `readings` | array | Optional public or authenticated links for preparation or extension. |
 | `teachingSlides` | array | Slides used by `present.html`. |
 
-Arrays may be empty when a component does not serve the session's goals. Keep at least one substantive learner activity in every published session.
+Arrays may be empty. The included examples each contain at least one learner activity, but the structure can be adjusted to fit a different use.
 
 ## Copyable starter session
 
@@ -121,7 +121,7 @@ Each concept has:
 - `title`, the learner-facing term; and
 - `body`, a concise plain-text explanation. The renderer escapes this field.
 
-Use concept cards for distinctions learners will reuse. If a card becomes a miniature lecture, move the detail into a problem, reading, or slide sequence.
+In the included sessions, concept cards hold distinctions that recur later. Longer explanations can instead sit in a problem, reading, or slide sequence.
 
 ## Diagrams
 
@@ -148,7 +148,7 @@ The platform does not authenticate a material URL. If the resource is restricted
 
 A problem has `title`, `level`, `context`, and a `parts` array. Each part has `question` and `solution`.
 
-Good problem design usually follows this sequence:
+The sample problems follow this sequence:
 
 1. provide only the context needed to act;
 2. ask for a concrete judgment, computation, or explanation;
@@ -180,7 +180,7 @@ The presenter supports these visual types:
 
 The type selects a layout, while `content` supplies the trusted HTML inside that layout. A hint has `icon`, `label`, and `content`.
 
-Hints work best when they progressively change the learner's available support:
+The sample hints progress by changing the available support:
 
 1. first hint recalls a relevant concept;
 2. second hint suggests a representation or next step; and

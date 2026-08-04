@@ -40,9 +40,9 @@ A usable theme should:
 
 If you add a logo or photograph, use an asset you own or have permission to redistribute. Record its source and license in `THIRD_PARTY_NOTICES.md` when appropriate. Do not copy an institutional mark from a private site merely because you teach there.
 
-## 3. Plan the session sequence
+## 3. The sample session sequence
 
-The five synthetic sessions model a broadly reusable arc:
+The five synthetic sessions demonstrate one possible arc:
 
 | Pattern | Teaching purpose | Possible adaptations |
 | --- | --- | --- |
@@ -52,9 +52,9 @@ The five synthetic sessions model a broadly reusable arc:
 | Applied Case | Combine evidence and action | Policy memo, product decision, ethical analysis, field scenario |
 | Review Workshop | Retrieve, connect, and transfer | Exam review, capstone synthesis, professional certification practice |
 
-You can retain this arc, repeat a pattern across modules, or replace it entirely. Use one session object per meaningful learner destination, not one object per administrative week.
+This arc can be retained, repeated across modules, or replaced entirely. In the sample, each session object corresponds to one learner-facing destination.
 
-## 4. Write the course content
+## 4. Replace the sample content
 
 Edit the `SESSIONS` array in `js/content.js`. Each session can combine:
 
@@ -66,7 +66,7 @@ Edit the `SESSIONS` array in `js/content.js`. Each session can combine:
 - readings; and
 - interactive slides with optional hints.
 
-The [Content model](CONTENT_MODEL.md) gives the exact shape and a copyable starter object. The [Teaching design guide](TEACHING_DESIGN_GUIDE.md) explains when each component earns its place.
+The [Content model](CONTENT_MODEL.md) gives the exact shape and a copyable starter object. The optional [notes on the sample sessions](TEACHING_DESIGN_GUIDE.md) explain how this demonstration combines the components.
 
 ## 5. Handle materials deliberately
 
@@ -116,9 +116,9 @@ The infrastructure does not assume operations management. A few mappings illustr
 - **Engineering:** diagrams show system structure, problems expose units and assumptions, and hints target common model-selection errors.
 - **Humanities:** concept cards define analytical lenses, problems compare interpretations, and revealable feedback models textual reasoning using public-domain or properly licensed excerpts.
 
-The platform is most effective when the interaction changes what learners do. Avoid turning every section into static reading simply because the template can display it.
+The included examples emphasize interaction, but the same components can also support more reading-focused approaches.
 
-## 8. Keep upgrades manageable
+## 8. Optional approach for easier upgrades
 
 When possible:
 

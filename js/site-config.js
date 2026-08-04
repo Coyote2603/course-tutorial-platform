@@ -1,18 +1,18 @@
 /*
- * Course Tutorial Platform
+ * Interactive Teaching Platform
  *
  * Change the values in this file to rebrand the platform. The pages and
  * rendering code read these settings automatically; no build step is needed.
  */
 
 const SITE_CONFIG = Object.freeze({
-  siteTitle: "Course Tutorial Platform",
-  shortTitle: "Course Tutorials",
-  courseTitle: "Designing Better Decisions",
-  courseSubtitle: "A reusable set of guided sessions, worked examples, practice activities, and interactive teaching slides.",
-  instructorName: "Course Team",
+  siteTitle: "Interactive Teaching Platform",
+  shortTitle: "Teaching Platform",
+  courseTitle: "An Interactive Teaching Platform",
+  courseSubtitle: "A public, reusable version of a platform first built for students, with guided sessions, worked examples, practice activities, interactive slides, and a Newsvendor game.",
+  instructorName: "Developed by Stefanos Poulidis",
   institutionName: "",
-  footerText: "Course Tutorial Platform — an open template for adaptable teaching experiences.",
+  footerText: "Built for students and shared for adaptation.",
 
   theme: Object.freeze({
     primary: "#173f5f",

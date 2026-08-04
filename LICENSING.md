@@ -27,7 +27,7 @@ This category includes:
 
 When reusing or adapting this content, give appropriate credit, link to CC BY 4.0, and indicate whether you made changes. A suitable attribution is:
 
-> Adapted from the Course Tutorial Platform by Stefanos Poulidis, licensed under CC BY 4.0. Changes were made.
+> Adapted from the Interactive Teaching Platform by Stefanos Poulidis, licensed under CC BY 4.0. Changes were made.
 
 The functional code surrounding educational wording remains available under MIT. If a file contains both, the code structure is MIT-licensed and the expressive teaching content is CC BY 4.0.
 

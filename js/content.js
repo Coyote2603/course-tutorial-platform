@@ -1,5 +1,5 @@
 /*
- * Synthetic starter content for the Course Tutorial Platform.
+ * Synthetic starter content for the Interactive Teaching Platform.
  *
  * Every name, organization, scenario, and exercise below is fictional. Replace
  * these five session objects with your own course material while preserving the

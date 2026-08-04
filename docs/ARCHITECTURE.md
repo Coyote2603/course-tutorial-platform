@@ -1,6 +1,6 @@
 # Architecture
 
-The Course Tutorial Platform is a zero-build static application. Page templates load configuration and content into the browser, then small renderer scripts construct the visible interface.
+The Interactive Teaching Platform is a zero-build static application. Page templates load configuration and content into the browser, then small renderer scripts construct the visible interface.
 
 ## Runtime flow
 

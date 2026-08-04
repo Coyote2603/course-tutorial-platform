@@ -1,14 +1,16 @@
-# Course Tutorial Platform
+# Interactive Teaching Platform
 
-A reusable, zero-build website for structured course tutorials, interactive teaching slides, worked examples, and a public Newsvendor game. It runs as plain HTML, CSS, and JavaScript, so instructors can adapt it without a framework, database, or build pipeline.
+A reusable, zero-build version of a platform developed for guided teaching materials, interactive slides, worked examples, practice activities, and a public Newsvendor game. It runs as plain HTML, CSS, and JavaScript, so it can be adapted without a framework, database, or build pipeline.
 
-[Open the live demo](https://stefanospoulidis.github.io/course-tutorial-platform/) · [Create your own repository from this template](https://github.com/StefanosPoulidis/course-tutorial-platform/generate) · [Read the educator guide](docs/GETTING_STARTED.md)
+[Open the live demo](https://stefanospoulidis.github.io/course-tutorial-platform/) · [Create your own repository from this template](https://github.com/StefanosPoulidis/course-tutorial-platform/generate) · [See how to adapt it](docs/GETTING_STARTED.md)
 
-![Course Tutorial Platform dashboard with five guided sessions and a public Newsvendor game](docs/images/platform-preview.png)
+![Interactive Teaching Platform dashboard with five example sessions and a public Newsvendor game](docs/images/platform-preview.png)
 
 The repository ships with five newly written synthetic sessions. They demonstrate the platform structure without reproducing any private course pack, assessment, recording, or worked solution from the teaching environment that inspired the platform.
 
-This public edition preserves the polished dashboard, session flow, presenter experience, and Newsvendor game developed through live teaching use. The original INSEAD tutorial materials have been deliberately excluded and replaced with institution-neutral examples designed for open adaptation.
+This public edition preserves the dashboard, session flow, presenter experience, and Newsvendor game developed through live teaching use. The original INSEAD tutorial materials have been deliberately excluded and replaced with institution-neutral examples designed for open adaptation.
+
+It is offered as one practical example, not as a prescription for course design. Every component can be kept, changed, or removed depending on the course, instructor, and students.
 
 > [!IMPORTANT]
 > A public static site is fully public. Every file committed here, deployed through GitHub Pages, or downloaded by a browser must be treated as openly accessible. Do not add restricted teaching materials, student information, answer keys, recordings, passwords, or private institutional assets. Link restricted resources to an authenticated LMS or another server-side access-controlled service instead.
@@ -21,7 +23,7 @@ This public edition preserves the polished dashboard, session flow, presenter ex
 4. Replace the fictional sessions in `js/content.js`, one session at a time.
 5. Run `npm run check`, complete the release checklist, and enable GitHub Pages when the site is ready.
 
-The [Getting started guide](docs/GETTING_STARTED.md) walks through every step, while the [Teaching design guide](docs/TEACHING_DESIGN_GUIDE.md) helps you plan a coherent learner journey before writing large amounts of content.
+The [Getting started guide](docs/GETTING_STARTED.md) explains the setup and file structure. The optional [notes on the sample sessions](docs/TEACHING_DESIGN_GUIDE.md) describe how this particular demonstration uses the available features.
 
 ## What is included
 
@@ -58,19 +60,19 @@ This integrated command checks the public-content boundary, validates the config
 
 ## Explore the demo in ten minutes
 
-The synthetic sequence doubles as a tour of the authoring patterns.
+The synthetic sequence doubles as a tour of the platform's features.
 
-| Stop | What to inspect | Teaching pattern |
+| Stop | What to inspect | What the sample demonstrates |
 | --- | --- | --- |
-| Dashboard | Study path and session cards | Make the learning sequence visible before learners enter a session |
-| Session 1 | Concept cards, diagram, and first problem | Establish shared vocabulary, then require a small application |
-| Session 2 | Calculation and sensitivity check | Expose expert reasoning and its dependence on assumptions |
-| Session 3 | Progressive presenter hints | Preserve commitment before adding support |
-| Session 4 | Fictional organizational case | Connect analysis to stakeholders and implementation |
-| Session 5 | Retrieval and transfer prompts | Reconstruct and apply, rather than simply reread |
-| Newsvendor Challenge | Eight linked decisions and benchmark feedback | Build intuition through controlled comparison and immediate feedback |
+| Dashboard | Study path and session cards | A visible sequence of learner-facing materials |
+| Session 1 | Concept cards, diagram, and first problem | Shared vocabulary followed by a small application |
+| Session 2 | Calculation and sensitivity check | Visible reasoning and its dependence on assumptions |
+| Session 3 | Progressive presenter hints | An initial attempt followed by optional support |
+| Session 4 | Fictional organizational case | Analysis connected to stakeholders and implementation |
+| Session 5 | Retrieval and transfer prompts | Reconstruction and application in a new context |
+| Newsvendor Challenge | Eight linked decisions and benchmark feedback | Controlled comparison with immediate feedback |
 
-Open each session's interactive slides and reveal its hints. They are public learner-facing scaffolds, not hidden instructor notes. The [Teaching design guide](docs/TEACHING_DESIGN_GUIDE.md) maps every feature to a learning goal and common design mistake.
+Open each session's interactive slides to see the available layouts and hints. They are public learner-facing scaffolds, not hidden instructor notes. The optional [notes on the sample sessions](docs/TEACHING_DESIGN_GUIDE.md) explain the choices made in this demo, which are examples rather than a prescribed teaching method.
 
 ## Adapt it for a course
 
@@ -123,7 +125,7 @@ This repository intentionally has no password gate. A password prompt implemente
 
 See [Privacy and access](docs/PRIVACY_AND_ACCESS.md) for the threat model and safe publishing patterns.
 
-## Design principles
+## Design choices in this version
 
 - **Content is data.** Instructors can change course material without rewriting page templates.
 - **Public means public.** The repository never presents client-side hiding as access control.

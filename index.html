@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#173f5f" />
   <meta name="description" content="A reusable, zero-build platform for guided course sessions, practice problems, interactive slides, and teaching activities." />
-  <title>Course Tutorial Platform</title>
+  <title>Interactive Teaching Platform</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="vendor/katex/katex.min.css" />
@@ -17,7 +17,7 @@
 
   <nav class="navbar" aria-label="Primary navigation">
     <div class="nav-inner">
-      <a href="index.html" class="nav-brand" data-config="shortTitle">Course Tutorials</a>
+      <a href="index.html" class="nav-brand" data-config="shortTitle">Teaching Platform</a>
       <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Open navigation" aria-controls="nav-links" aria-expanded="false">
         <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
       </button>
@@ -30,12 +30,12 @@
     <div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
     <div class="hero-inner">
       <div class="hero-copy">
-        <span class="eyebrow light">Open teaching toolkit</span>
-        <h1 data-config="courseTitle">Designing Better Decisions</h1>
-        <p class="hero-lead" data-config="courseSubtitle">A reusable set of guided sessions, worked examples, practice activities, and interactive teaching slides.</p>
+        <span class="eyebrow light">A working public example</span>
+        <h1 data-config="courseTitle">An Interactive Teaching Platform</h1>
+        <p class="hero-lead" data-config="courseSubtitle">A public, reusable version of a platform first built for students, with guided sessions, worked examples, practice activities, interactive slides, and a Newsvendor game.</p>
         <p class="course-meta" id="course-meta"></p>
         <div class="hero-actions">
-          <a class="btn btn-light" href="#sessions">Explore the sessions</a>
+          <a class="btn btn-light" href="#sessions">Explore the example sessions</a>
           <a class="btn btn-ghost-light" id="hero-game-link" href="newsvendor-game.html">Try the public game <span aria-hidden="true">→</span></a>
         </div>
       </div>
@@ -59,42 +59,42 @@
     <section class="intro-strip" aria-labelledby="platform-intro-title">
       <div class="container intro-strip-inner">
         <div>
-          <span class="eyebrow">A complete starter</span>
-          <h2 id="platform-intro-title">Replace the examples. Keep the learning flow.</h2>
+          <span class="eyebrow">About this version</span>
+          <h2 id="platform-intro-title">Built for one course, shared for others to adapt.</h2>
         </div>
-        <p>This demo uses entirely fictional course content so you can see every component safely. Adapt the configuration, session data, resources, and colors for your own discipline.</p>
+        <p>This demonstration uses fictional content to show what the platform can do without sharing original course materials. Every component can be kept, changed, or removed to suit a different context.</p>
       </div>
     </section>
 
     <section class="container session-section" id="sessions" aria-labelledby="session-list-title">
       <div class="section-heading">
         <div>
-          <span class="eyebrow">Sample learning sequence</span>
-          <h2 id="session-list-title">Guided sessions, one coherent arc</h2>
+          <span class="eyebrow">Illustrative content</span>
+          <h2 id="session-list-title">Example sessions</h2>
         </div>
-        <p>Each card opens a complete session page with concepts, activities, resources, problems, and presenter-ready slides.</p>
+        <p>The fictional sessions demonstrate concepts, activities, resources, problems, and presenter-ready slides. They are examples, not a suggested course structure.</p>
       </div>
       <div class="card-grid" id="card-grid"></div>
     </section>
 
     <section class="container study-path" aria-labelledby="study-path-title">
       <div class="study-path-copy">
-        <span class="eyebrow">Learner experience</span>
-        <h2 id="study-path-title">Use each session in three passes</h2>
-        <p>The interface keeps explanation, application, and feedback together while allowing instructors to replace every piece of sample content.</p>
+        <span class="eyebrow">How this version works</span>
+        <h2 id="study-path-title">One possible student journey</h2>
+        <p>In the original platform, explanation, application, and feedback were kept together. The three steps illustrate that flow rather than prescribe it.</p>
       </div>
       <ol class="study-steps">
-        <li><span>1</span><div><strong>Review the concepts</strong><p>Start with objectives, concept cards, and the visual model.</p></div></li>
-        <li><span>2</span><div><strong>Work through the slides</strong><p>Use optional hints to unpack the example and discuss the reasoning.</p></div></li>
-        <li><span>3</span><div><strong>Solve before checking</strong><p>Attempt each problem part, then reveal and compare the worked response.</p></div></li>
+        <li><span>1</span><div><strong>Concepts and objectives</strong><p>Objectives, concept cards, and the visual model introduce the topic.</p></div></li>
+        <li><span>2</span><div><strong>Examples and discussion</strong><p>Interactive slides combine examples, optional hints, and discussion prompts.</p></div></li>
+        <li><span>3</span><div><strong>Practice and feedback</strong><p>Problems include worked responses that can be revealed after an attempt.</p></div></li>
       </ol>
     </section>
   </main>
 
   <footer class="footer">
     <div class="footer-inner">
-      <a href="index.html" class="footer-brand" data-config="shortTitle">Course Tutorials</a>
-      <p data-config="footerText">Course Tutorial Platform — an open template for adaptable teaching experiences.</p>
+      <a href="index.html" class="footer-brand" data-config="shortTitle">Teaching Platform</a>
+      <p data-config="footerText">Built for students and shared for adaptation.</p>
     </div>
   </footer>
 

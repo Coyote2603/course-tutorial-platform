@@ -1,25 +1,25 @@
-# Teaching design guide
+# Notes on the sample sessions
 
-This platform works best as a sequence of learner actions, not as a document repository. Start with what learners should do differently, then select the smallest set of platform features that supports that change.
+This optional guide explains the choices built into the five synthetic sessions. They provide one possible warm start, not a recommended teaching method. Any pattern can be reused, changed, or ignored depending on the course, instructor, and students.
 
-## Map features to teaching goals
+## How the sample uses each feature
 
-| Teaching goal | Useful feature | Design move | Common failure |
+| Purpose in the sample | Feature used | How it appears here | Possible limitation |
 | --- | --- | --- | --- |
-| Establish a shared language | Concept cards | Contrast terms that learners often conflate | Turning cards into long textbook paragraphs |
-| Explain a system or argument | Diagram | Show relationships that prose makes hard to track | Decorative visuals with no explanatory role |
-| Model expert reasoning | Worked problem | Reveal assumptions and intermediate steps | Showing only the final answer |
-| Encourage retrieval | Revealable solution | Ask for a response before feedback | Letting learners open answers immediately without a prompt |
-| Scaffold difficult work | Presenter hints | Move from recall to representation to partial structure | Using the first hint as a complete solution |
-| Support discussion | Interactive slide | Ask for a defensible choice with competing considerations | Asking a broad question with no decision object |
-| Extend preparation | Reading or material | State purpose, time, and access status | Posting an unexplained list of links |
-| Build experiential intuition | Newsvendor game | Compare decisions on a common realized outcome | Letting random luck obscure decision quality |
+| Establish a shared language | Concept cards | Contrasts terms that learners may conflate | Cards can become long textbook paragraphs |
+| Explain a system or argument | Diagram | Shows relationships that prose makes hard to track | A visual can become decorative rather than explanatory |
+| Make reasoning visible | Worked problem | Reveals assumptions and intermediate steps | Only the final answer may remain visible |
+| Support retrieval | Revealable solution | Invites a response before feedback | Answers may be opened without an initial attempt |
+| Offer optional support | Presenter hints | Moves from recall to representation to partial structure | The first hint may reveal too much |
+| Support discussion | Interactive slide | Presents a defensible choice with competing considerations | A broad question may have no clear decision object |
+| Extend preparation | Reading or material | States purpose, time, and access status | A link list may lack context |
+| Build experiential intuition | Newsvendor game | Compares decisions on a common realized outcome | Random luck may obscure decision quality |
 
-Not every session needs every feature. A concise session with one strong activity is better than a crowded session assembled to fill all available sections.
+The demo does not assume that every session needs every feature. Some adaptations may use only one or two components, while others may combine several.
 
-## Design backward from an observable outcome
+## One planning pattern represented in the demo
 
-Write two or three objectives using actions that can be observed, such as:
+The sample begins with two or three objectives expressed through observable actions, such as:
 
 - calculate;
 - classify;
@@ -30,117 +30,89 @@ Write two or three objectives using actions that can be observed, such as:
 - recommend; or
 - transfer.
 
-Avoid objectives such as “understand” unless the session later asks learners to demonstrate that understanding through a specific action.
+Broad objectives such as “understand” become easier to evaluate when a later activity makes that understanding visible through a specific action.
 
-For each objective, identify:
+In this example, each objective is paired with:
 
 1. the evidence that would convince you a learner achieved it;
 2. the practice needed before that evidence can be produced;
 3. the most likely error or misconception; and
 4. the feedback that would help the learner recover.
 
-Those four answers usually determine whether you need a concept card, problem, hint, diagram, or reading.
+Together, those elements informed whether the sample used a concept card, problem, hint, diagram, or reading.
 
-## Use the five demo patterns
+## Five patterns included in the demo
 
 ### 1. Concepts and Vocabulary
 
-Use this pattern when learners lack a shared language or routinely confuse nearby ideas.
-
-- Select three to five terms that will recur later.
-- Define each term by its function, not by a circular synonym.
-- Include a sorting, classification, or framing task.
-- End with a rule learners can apply in the next session.
+The sample introduces a small set of recurring terms, defines them by function, adds a classification task, and ends with a rule that appears again later.
 
 ### 2. Worked Example
 
-Use this pattern when expert performance contains invisible steps.
-
-- State the decision or output before doing the calculation.
-- Label inputs, assumptions, and units.
-- Show one intermediate representation.
-- Interpret the result in words.
-- Change one assumption and ask whether the recommendation survives.
+The worked example states the decision first, labels its inputs, assumptions, and units, shows an intermediate representation, interprets the result, and then varies one assumption.
 
 ### 3. Decision Lab
 
-Use this pattern when learners need practice committing under uncertainty.
-
-- Keep the scenario bounded enough to support a real choice.
-- Ask for a prediction or recommendation before revealing the benchmark.
-- Use hints that preserve productive struggle.
-- Debrief the reasoning process separately from whether the answer was correct.
+The decision lab uses a bounded scenario, asks for a recommendation before revealing the benchmark, offers optional hints, and considers the reasoning process separately from whether the answer was correct.
 
 ### 4. Applied Case
 
-Use this pattern when learners must combine analysis with implementation.
-
-- Use a fictional organization unless a real case is cleared for public release.
-- Identify the decision owner and time horizon.
-- Add one meaningful stakeholder tension.
-- Separate assumptions from evidence.
-- End with an action, checkpoint, and trigger for revisiting the decision.
+The applied case uses a fictional organization, identifies a decision owner and time horizon, includes a stakeholder tension, separates assumptions from evidence, and ends with an action and a point for revisiting it.
 
 ### 5. Review Workshop
 
-Use this pattern to strengthen retrieval and transfer, not merely to repeat prior slides.
+The review workshop begins with unaided recall, connects ideas across sessions, uses a new context, reveals a synthesis after an initial attempt, and asks what evidence would change the answer.
 
-- Begin with unaided recall.
-- Ask learners to connect concepts across sessions.
-- Use a new context for the final problem.
-- Let learners inspect a synthesis only after constructing their own.
-- Ask what evidence would change their current answer.
+## Problem structure used in the demo
 
-## Write problems that produce thinking
+The sample problems use a clear decision object and enough information to begin without requiring a long story.
 
-A strong problem has a clear decision object and enough information to begin. It does not need a long story.
-
-Use multi-part problems to stage cognitive work:
+The multi-part examples stage the work as follows:
 
 1. **Represent.** Ask learners to identify inputs, sketch a model, or classify information.
 2. **Execute.** Ask for a calculation, comparison, interpretation, or choice.
 3. **Explain.** Ask why the result follows and which assumption matters.
 4. **Transfer.** Change one condition and ask how the reasoning changes.
 
-The solution should diagnose common errors. Instead of “Answer: 42,” explain the unit, the reasoning path, and why a plausible alternative is wrong.
+The sample solutions explain the unit, reasoning path, and why a plausible alternative may be wrong rather than showing only a final answer.
 
-## Design progressive hints
+## Progressive hints in the demo
 
-Hints are public scaffolds, not instructor secrets. A useful sequence is:
+Hints are public scaffolds, not instructor secrets. The demo uses sequences such as:
 
 - **Orientation:** “Which concept determines the relevant comparison?”
 - **Representation:** “Put both alternatives on the same scale before comparing.”
 - **Structure:** “Compute the weighted contribution of each criterion separately.”
 - **Check:** “Would the recommendation reverse if the most uncertain rating moved by one point?”
 
-Label hints by function. “Recall,” “Try a table,” or “Check your assumption” tells learners what support they are choosing.
+Labels such as “Recall,” “Try a table,” or “Check your assumption” indicate what kind of support a learner is choosing.
 
-## Design presenter slides for facilitation
+## Presenter mode in the demo
 
-Presenter mode is for pacing a live interaction. Keep the audience view distinct from an instructor script.
+Presenter mode was built to help pace a live interaction while keeping the audience view distinct from an instructor script. The sample uses:
 
-- Put one main task or relationship on each slide.
-- Make prompts answerable in a stated time.
-- Use large text and short labels that remain legible on a projector.
-- Reveal hints only after learners have had time to act.
-- Include the debrief logic in the public slide only when learners should retain it.
-- Keep private facilitation notes in your authenticated teaching system, not hidden in the repository.
+- one main task or relationship on each slide;
+- prompts that can be answered in a stated time;
+- large text and short labels that remain legible on a projector;
+- hints that can be revealed after an initial attempt;
+- public debrief logic when learners may need to retain it; and
+- private facilitation notes kept outside the public repository.
 
-Test all slides using keyboard navigation and full-screen mode before class.
+A keyboard and full-screen check helps identify layout or navigation problems before the slides are used live.
 
-## Build a course map before authoring
+## Optional planning table
 
-For each planned session, complete a small planning table:
+The table below is one optional way to sketch a set of sessions before building them:
 
 | Session | Learner action | Prior knowledge | Core practice | Feedback | Transfer |
 | --- | --- | --- | --- | --- | --- |
 | 1 | What will learners do? | What must they already know? | What will they attempt? | What will help them recover? | Where will they use it next? |
 
-If two sessions have the same learner action and feedback pattern, consider combining them or making the progression between them more explicit.
+Similar rows may suggest an opportunity to combine sessions or make the progression between them more explicit.
 
-## Quality rubric
+## Optional review prompts
 
-Before publishing a session, ask:
+The following questions can be useful when reviewing a session:
 
 - **Alignment:** Does every activity support a stated objective?
 - **Action:** Must the learner do something before receiving the answer?

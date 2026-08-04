@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use or adapt this platform, please cite the software and preserve the applicable license notices."
-title: "Course Tutorial Platform"
+title: "Interactive Teaching Platform"
 type: software
 version: 1.0.0
 date-released: 2026-08-04
@@ -10,8 +10,8 @@ authors:
   - family-names: "Poulidis"
     given-names: "Stefanos"
 abstract: >-
-  A reusable, zero-build static platform for structured course tutorials,
-  interactive teaching slides, worked feedback, and a public Newsvendor game.
+  A reusable, zero-build static example for guided teaching materials,
+  interactive slides, worked practice, and a public Newsvendor game.
 keywords:
   - teaching
   - tutorial platform

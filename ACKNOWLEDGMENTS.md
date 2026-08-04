@@ -2,7 +2,7 @@
 
 ## Platform and game
 
-The Course Tutorial Platform and the Newsvendor Challenge were designed and developed by **Stefanos Poulidis** to make interactive, structured teaching easier to adapt across courses and institutions.
+The Interactive Teaching Platform and the Newsvendor Challenge were designed and developed by **Stefanos Poulidis** as a shareable version of tools first built for his students.
 
 ## Teaching lineage
 

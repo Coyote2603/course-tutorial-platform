@@ -1,7 +1,7 @@
-/* Course Tutorial Platform — interactive presenter mode. */
+/* Interactive Teaching Platform — interactive presenter mode. */
 
 const PRESENTER_DEFAULTS = Object.freeze({
-  siteTitle: "Course Tutorial Platform",
+  siteTitle: "Interactive Teaching Platform",
   theme: Object.freeze({ primary: "#173f5f", accent: "#e05a47" })
 });
 
@@ -198,7 +198,7 @@ function openPresenterHelp() {
       <div><kbd>Space</kbd><strong>Scroll, then advance</strong><p>Space moves through a long slide before advancing.</p></div>
       <div><kbd>G</kbd><strong>Go to a slide</strong><p>Open the visual slide navigator.</p></div>
       <div><kbd>F</kbd><strong>Fullscreen</strong><p>Enter or leave fullscreen presentation mode.</p></div>
-      <div><span class="help-symbol">?</span><strong>Open hints deliberately</strong><p>Attempt the prompt first, then reveal one hint at a time.</p></div>
+      <div><span class="help-symbol">?</span><strong>Optional hints</strong><p>Open one hint at a time whenever another prompt or example would help.</p></div>
       <div><kbd>Esc</kbd><strong>Close or exit</strong><p>Close an open panel, leave fullscreen, or return to the session.</p></div>
     </div>
   </div>`;
