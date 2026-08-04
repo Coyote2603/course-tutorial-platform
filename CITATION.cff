@@ -3,6 +3,9 @@ message: "If you use or adapt this platform, please cite the software and preser
 title: "Course Tutorial Platform"
 type: software
 version: 1.0.0
+date-released: 2026-08-04
+repository-code: "https://github.com/StefanosPoulidis/course-tutorial-platform"
+url: "https://stefanospoulidis.github.io/course-tutorial-platform/"
 authors:
   - family-names: "Poulidis"
     given-names: "Stefanos"

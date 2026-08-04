@@ -4,12 +4,16 @@ This guide takes an instructor from a fresh copy of the repository to a locally 
 
 ## 1. Make a clean copy
 
-Use GitHub's template or import workflow if the published repository is configured as a template. Otherwise clone it normally:
+Open the public repository and select [**Use this template**](https://github.com/StefanosPoulidis/course-tutorial-platform/generate). Choose **Create a new repository**, then set its owner, name, description, and visibility. Use a private repository while drafting if your institution permits it, but remember that any GitHub Pages deployment must still be reviewed and tested for its actual visibility.
+
+Clone the new repository you just created:
 
 ```bash
-git clone YOUR_REPOSITORY_URL
-cd course-tutorial-platform
+git clone YOUR_NEW_REPOSITORY_URL
+cd YOUR_NEW_REPOSITORY_NAME
 ```
+
+If you only want to inspect the original starter locally, clone `https://github.com/StefanosPoulidis/course-tutorial-platform.git` instead.
 
 If you are a maintainer creating the public repository from a private teaching platform, do **not** fork the private repository or copy its `.git` directory. Begin with the sanitized public files in a new repository so private materials do not survive in commit history.
 

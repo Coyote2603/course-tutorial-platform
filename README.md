@@ -2,6 +2,8 @@
 
 A reusable, zero-build website for structured course tutorials, interactive teaching slides, worked examples, and a public Newsvendor game. It runs as plain HTML, CSS, and JavaScript, so instructors can adapt it without a framework, database, or build pipeline.
 
+[Open the live demo](https://stefanospoulidis.github.io/course-tutorial-platform/) · [Create your own repository from this template](https://github.com/StefanosPoulidis/course-tutorial-platform/generate) · [Read the educator guide](docs/GETTING_STARTED.md)
+
 ![Course Tutorial Platform dashboard with five guided sessions and a public Newsvendor game](docs/images/platform-preview.png)
 
 The repository ships with five newly written synthetic sessions. They demonstrate the platform structure without reproducing any private course pack, assessment, recording, or worked solution from the teaching environment that inspired the platform.
@@ -10,6 +12,16 @@ This public edition preserves the polished dashboard, session flow, presenter ex
 
 > [!IMPORTANT]
 > A public static site is fully public. Every file committed here, deployed through GitHub Pages, or downloaded by a browser must be treated as openly accessible. Do not add restricted teaching materials, student information, answer keys, recordings, passwords, or private institutional assets. Link restricted resources to an authenticated LMS or another server-side access-controlled service instead.
+
+## Start your own platform
+
+1. Select [**Use this template**](https://github.com/StefanosPoulidis/course-tutorial-platform/generate) to create a new repository in your own account or organization. This gives your course an independent repository without carrying over this project's Git history.
+2. Clone your new repository and run `npm run serve`.
+3. Replace the identity and colors in `js/site-config.js`.
+4. Replace the fictional sessions in `js/content.js`, one session at a time.
+5. Run `npm run check`, complete the release checklist, and enable GitHub Pages when the site is ready.
+
+The [Getting started guide](docs/GETTING_STARTED.md) walks through every step, while the [Teaching design guide](docs/TEACHING_DESIGN_GUIDE.md) helps you plan a coherent learner journey before writing large amounts of content.
 
 ## What is included
 
@@ -29,7 +41,7 @@ No account system, database, analytics, or student-data collection is included.
 No installation or build is required.
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/StefanosPoulidis/course-tutorial-platform.git
 cd course-tutorial-platform
 npm run serve
 ```
