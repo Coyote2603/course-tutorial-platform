@@ -8,10 +8,10 @@
 const SITE_CONFIG = Object.freeze({
   siteTitle: "Interactive Teaching Platform",
   shortTitle: "Teaching Platform",
-  courseTitle: "An Interactive Teaching Platform",
-  courseSubtitle: "A public, reusable version of a platform first built for students, with guided sessions, worked examples, practice activities, interactive slides, and a Newsvendor game.",
-  instructorName: "Developed by Stefanos Poulidis",
-  institutionName: "",
+  courseTitle: "OM Core Understanding Platform",
+  courseSubtitle: "14 worked problems on process bottlenecks, batching trade-offs, queueing and pooling, and capacity planning under uncertainty — every wrong answer gets a targeted hint, every right answer gets the full worked solution.",
+  instructorName: "Your Name",
+  institutionName: "Indian Institute of Management Bangalore",
   footerText: "Built for students and shared for adaptation.",
 
   theme: Object.freeze({
@@ -25,9 +25,9 @@ const SITE_CONFIG = Object.freeze({
   }),
 
   game: Object.freeze({
-    title: "The Newsvendor Challenge",
-    description: "Make inventory decisions under uncertainty, compare your policy with the benchmark, and learn from immediate feedback.",
-    href: "newsvendor-game.html",
-    duration: "About 6 minutes"
+    title: "The OM Core Challenge",
+    description: "14 worked problems on capacity, batching, queueing, and process analysis — every wrong answer gets a targeted hint.",
+    href: "om-challenge.html",
+    duration: "About 30 minutes"
   })
 });
